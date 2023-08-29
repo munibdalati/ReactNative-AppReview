@@ -3,12 +3,12 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/home";
 import ReviewDetails from "../screens/reviewDetails";
+import Header from "../shared/header";
 
 const Stack = createNativeStackNavigator();
 
 function HomeStack() {
   return (
-    <NavigationContainer>
       <Stack.Navigator>
         <Stack.Group
           screenOptions={{
@@ -17,9 +17,9 @@ function HomeStack() {
           }}
         >
           <Stack.Screen
-            name="Home"
+            name="HomePage"
             component={Home}
-            options={{ title: "GameZone" }}
+            options={{ headerShown: false }}
           />
 
           <Stack.Screen
@@ -29,7 +29,7 @@ function HomeStack() {
           />
         </Stack.Group>
       </Stack.Navigator>
-    </NavigationContainer>
+
   );
 }
 

@@ -4,6 +4,7 @@ import { useFonts } from "expo-font";
 import * as SplachScreen from "expo-splash-screen";
 import Navigator from "./routes/drawer";
 
+
 const App = () => {
   const [fontsLoaded] = useFonts({
     "nunito-regular": require("./assets/fonts/Nunito-Regular.ttf"),
@@ -25,7 +26,10 @@ const App = () => {
   }
 
 
-  return <Navigator />;
+  return(
+      <Navigator />
+
+  ) 
 };
 
 export default App;

@@ -1,29 +1,27 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import About from "../screens/about";
+// import { NavigationContainer } from "@react-navigation/native";
+// import { createNativeStackNavigator } from "@react-navigation/native-stack";
+// import About from "../screens/about";
 
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 
-function AboutStack() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Group
-          screenOptions={{
-            headerTintColor: "#444",
-            headerStyle: { backgroundColor: "#eee", height: 60 },
-          }}
-        >
-          <Stack.Screen
-            name="About"
-            component={About}
-            options={{ title: "About GameZone" }}
-          />
+// function AboutStack() {
+//   return (
+//       <Stack.Navigator>
+//         <Stack.Group
+//           screenOptions={{
+//             headerTintColor: "red",
+//             headerStyle: { backgroundColor: "#eee", height: 60 },
+//           }}
+//         >
+//           <Stack.Screen
+//             name="AboutPage"
+//             component={About}
+//             options={{ title: "About GameZone" }}
+//           />
 
-        </Stack.Group>
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
+//         </Stack.Group>
+//       </Stack.Navigator>
+//   );
+// }
 
-export default AboutStack;
+// export default AboutStack;
